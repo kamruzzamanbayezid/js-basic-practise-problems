@@ -1,4 +1,3 @@
-// problem 1
 
 function cubeNumber(number) {
   if (typeof number !== "number") {
@@ -9,11 +8,6 @@ function cubeNumber(number) {
   }
 }
 
-const positiveNumber = cubeNumber(4);
-console.log(positiveNumber);
-
-
-// problem 2
 
 function matchFinder(string1, string2) {
   if (typeof string1 !== "string" || typeof string2 !== "string") {
@@ -27,35 +21,19 @@ function matchFinder(string1, string2) {
   }
 }
 
-const inputString = matchFinder("Peter Parker", "pet");
-console.log(inputString);
-
-// problem 4
 
 function findAddress(obj) {
   if (typeof obj !== "object") {
     return "please provide me an object"
   } else {
-    const street = obj.street || "_";
-    const house = obj.house || "_";
-    const society = obj.society || "_";
+    const street = obj.street || "__";
+    const house = obj.house || "__";
+    const society = obj.society || "__";
 
     return street + ',' + house + ',' + society;
   }
-
-
 }
 
-const inputObject = {
-  street: 10,
-  // house: '15A',
-  society: 'Earth Perfect'
-}
-
-console.log(findAddress(inputObject));
-
-
-// problem 5
 
 function canPay(changeArray, totalDue) {
   if (!Array.isArray(changeArray) || typeof totalDue !== 'number') {
@@ -77,10 +55,6 @@ function canPay(changeArray, totalDue) {
   }
 }
 
-const inputArray = canPay([1, 2, 5], 10);
-console.log(inputArray);
-
-// console.log('======================');
 
 
 
@@ -112,6 +86,3 @@ function sortMaker(arr) {
   return arr;
 }
 
-const inputArr = [2, 2];
-const arrResult = sortMaker(inputArr);
-console.log(arrResult);
